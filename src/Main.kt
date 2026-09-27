@@ -1,12 +1,28 @@
+import javax.management.InvalidAttributeValueException
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun helloWorld(nome: String) = println("Olá, $nome!")
+fun main(){
+    val str: String? = null
+    println(str?.length)
+//    print(str!!.length)
 
-fun media(n1: Int, n2: Int): Int = (n1 + n2) / 2
-fun soma(n1: Int, n2: Int) = n1 + n2
+    print("Enter a Number")
+    val v = readLine()
+    if (v != null){
+        try {
+            v.trim().toInt()
+        } catch (e: NumberFormatException) {
+            println("Please input a valid NUMBER")
+        }
+        catch (e: NullPointerException) {
+            println("Please input NON NULL")
+        }
+        catch (e: Exception){
+            println("Unrecord fatal error")
+        }
+//      finally {
+//            println()
+        }
+    }
 
-fun main() {
-    helloWorld("Luke........")
-    println(media(10, 8))
-    println(soma(10, 85))
-}
