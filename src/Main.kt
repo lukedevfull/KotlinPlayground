@@ -1,5 +1,3 @@
-import javax.management.InvalidAttributeValueException
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main(){
@@ -8,7 +6,7 @@ fun main(){
 //    print(str!!.length)
 
     print("Enter a Number")
-    val v = readLine()
+    val v = readlnOrNull()
     if (v != null){
         try {
             v.trim().toInt()

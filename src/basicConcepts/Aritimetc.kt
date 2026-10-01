@@ -1,4 +1,4 @@
-package BasicConcepts
+package basicConcepts
 
 fun main() {
     val soma = 2 + 2

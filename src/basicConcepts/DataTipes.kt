@@ -1,4 +1,4 @@
-package BasicConcepts
+package basicConcepts
 
 /**
 Type        Bit      Intervalo

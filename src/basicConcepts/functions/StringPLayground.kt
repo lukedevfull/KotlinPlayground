@@ -1,4 +1,4 @@
-package BasicConcepts.Functions
+package basicConcepts.functions
 
 import java.util.Locale
 
